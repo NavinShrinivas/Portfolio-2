@@ -84,4 +84,7 @@ module.exports = withBundleAnalyzer({
 
     return config
   },
+  images: {
+    domains: ['github.com'],
+  },
 })

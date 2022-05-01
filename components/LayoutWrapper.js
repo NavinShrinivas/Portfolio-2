@@ -16,11 +16,11 @@ const LayoutWrapper = ({ children }) => {
             <Link href="/" aria-label={siteMetadata.headerTitle}>
               <div className="flex items-center justify-between">
                 <div className="mr-3">
-                  <Logo />
+                  <h1 className="hidden h-6 text-2xl font-semibold sm:block">Navin Shrinivas</h1>
                 </div>
                 {typeof siteMetadata.headerTitle === 'string' ? (
-                  <div className="hidden h-6 text-2xl font-semibold sm:block">
-                    {siteMetadata.headerTitle}
+                  <div className="h-6 text-2xl font-semibold sm:block">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAA8klEQVRoge2Y0Q2EMAiG8eIqbuBQN5JDuYHD6BOJMbXSFikC3+vptfj5SyhAoIuh5eZ52XaujeRY/9PjPn8SG5GgygiaoDypFq7Gc+v5NCKVCQQNUN4AM0bGmpuks0HBtxGEOzMtpsPImdbMcJg1YyQK0UYUoo0oRBtRiDZYOrv0nJIijAC8P5eUYMbIJ2b2u/XPv5sxQsqI1DkWdf3Um+HDyLXyXv3C1dkvKSO9s0HBl5FaSjMV51pQYaSkpzxdw9mf/Brh/IJx/pcvIxomQIB8pswYSTIv267FAgBtPzaNfNEEYsZIdibuTUmfMWMk0MYBXPlxnB+xhcsAAAAASUVORK5CYII=" />
                   </div>
                 ) : (
                   siteMetadata.headerTitle
